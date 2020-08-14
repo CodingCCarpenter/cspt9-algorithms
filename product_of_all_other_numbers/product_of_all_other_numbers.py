@@ -5,7 +5,14 @@ Returns: a List of integers
 def product_of_all_other_numbers(arr):
     # Your code here
 
-    pass
+    if len(arr) < 1:
+        return -1
+
+    product = 1
+    for n in arr:
+        product *= n
+
+    return [product // n for n in arr]
 
 
 if __name__ == '__main__':
