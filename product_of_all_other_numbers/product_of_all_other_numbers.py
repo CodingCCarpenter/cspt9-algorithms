@@ -12,8 +12,6 @@ def product_of_all_other_numbers(arr):
     for n in arr:
         product *= n
 
-    return [product // n for n in arr]
-
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
